@@ -1,0 +1,15 @@
+[
+    {
+      "name": "Product 1",
+      "image": "images/pro1.jpeg",
+      "weight": "750g",
+      "price": 300
+    },
+    {
+      "name": "Product 2",
+      "image": "images/pro2.jpeg",
+      "weight": "500g",
+      "price": 500
+    }
+
+  ]

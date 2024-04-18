@@ -1,0 +1,16 @@
+<div *ngIf="cart.length > 0">
+    <div *ngFor="let item of cart">
+      <h2>{{ item.name }}</h2>
+      <p>Price: {{ item.price }}</p>
+      <p>Quantity: {{ item.quantity }}</p>
+      <button (click)="removeFromCart(item.id)">Remove</button>
+    </div>
+    <div>
+      <p>Order Total: {{ orderTotal }}</p>
+      <p>Estimated Delivery Date: {{ estimatedDeliveryDate }}</p>
+      <button (click)="confirmOrder()">Confirm Order</button>
+    </div>
+  </div>
+  <div *ngIf="cart.length === 0">
+    <p>No product added.</p>
+  </div>
